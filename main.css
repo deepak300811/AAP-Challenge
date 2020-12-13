@@ -22,6 +22,12 @@ ul {
   font-size: 14px;
   font-weight: 300;
 }
+#blocking-p-small {
+  display: none;
+}
+#blocking-p-big {
+  display: block;
+}
 .container {
   max-width: var(--max-width);
   padding: 13px;
@@ -83,7 +89,7 @@ ul {
 }
 
 #hero {
-  height: 40vh;
+  height: 40%;
   width: 100vw;
   background: url("./images//B&W_bg.jpg") no-repeat center center/ cover;
 
@@ -127,11 +133,13 @@ ul {
   font-weight: 200;
   margin-bottom: 0.8rem;
 }
-.hero-inner-upper .left-part .light + p {
+.hero-inner-upper .left-part .light + p,
+.hero-inner-upper .left-part .light + p + p {
   font-weight: 300;
   letter-spacing: 26;
   line-height: 1.5;
 }
+
 .hero-inner-upper .right-part {
   display: flex;
   justify-content: flex-end;
@@ -234,7 +242,8 @@ ul {
     grid-gap: 0rem;
   }
   .hero-inner-lower {
-    margin-top: 4rem;
+    margin-top: 0rem;
+    padding: 0rem;
   }
   .hero-inner-upper .left-part h1 {
     font-size: 30px;
@@ -281,4 +290,13 @@ ul {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0rem;
   }
+  #blocking-p-small {
+    display: block;
+  }
+  #blocking-p-big {
+    display: none;
+  }
+  /* #hero {
+    height: 10%;
+  } */
 }
